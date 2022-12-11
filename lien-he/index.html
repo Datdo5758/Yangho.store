@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Liên Hệ</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/mystyle.css">
+  <link rel="stylesheet" href="../css/myresponsive.css">
+  <link rel="shortcut icon" href="../images/Yangho.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container-fluid" style="padding-right: 0px; padding-left: 0px;">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand text-warning" href="../">
+        <span style="padding-right: 10vh; padding-left: 6vh;">Yang Ho</span></a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../">Trang chủ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../gioi-thieu/">Giới thiệu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../khuyen-mai/">Khuyến mãi HOT</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <section class="contact_section layout_padding">
+    <div class="container ">
+      <div class="heading_container justify-content-center">
+        <h2 class="">
+          Liên Hệ Với Chúng Tôi
+        </h2>
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <form action="">
+            <div>
+              <input type="text" placeholder="Tên" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Số Điện Thoại" />
+            </div>
+            <div>
+              <input type="text" class="message-box" placeholder="Nội Dung" id="Th_noi_dung"/>
+            </div>
+            <div class="d-flex  mt-4 " style="margin-bottom:3vh">
+              <button id="btnGoi">
+                Gửi
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../js/apisms.js"></script>
+    <script>
+
+
+        document.getElementById("btnGoi").onclick = () => {
+
+            let sms = {
+                "noi_dung": Th_noi_dung.value,
+
+            }
+            apiSMS(sms).then(result => {
+                console.log(result)
+            }).catch(err => {
+                console.log(err)
+            })
+
+        }
+    </script>
+
+    <!-- last section -->
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="info_logo">
+        <h2>
+          Yang Ho
+        </h2>
+      </div>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="info_contact">
+            <h5>
+              Liên Hệ Chúng Tôi
+            </h5>
+            <div>
+              <div class="img-box">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <p>
+                789 Lạc Long Quân, Phường 10, Quận 10, Tp.HCM
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <p>
+                +01 1234567890
+              </p>
+            </div>
+            <div>
+              <div class="img-box">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <p>
+                Yangho@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form" style="padding-bottom:30px">
+            <h5>
+              Thanh Toán
+            </h5>
+            <div class="social_box">
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan1.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan2.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan3.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan4.png" alt="">
+              </a>
+            </div>
+            <div class="social_box" style="margin-top: 5px;">
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan5.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/thanhtoan6.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="info_insta">
+            <h5>
+              Instagram
+            </h5>
+            <div class="insta_container">
+              <div>
+                <a href="">
+                  <div class="insta-box b-1">
+                    <img src="../images/instagram1.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-2">
+                    <img src="../images/instagram3.png" alt="">
+                  </div>
+                </a>
+              </div>
+
+              <div>
+                <a href="">
+                  <div class="insta-box b-3">
+                    <img src="../images/instagram2.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-4">
+                    <img src="../images/instagram4.png" alt="">
+                  </div>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <div class="insta-box b-3">
+                    <img src="../images/instagram5.png" alt="">
+                  </div>
+                </a>
+                <a href="">
+                  <div class="insta-box b-4">
+                    <img src="../images/instagram6.png" alt="">
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="info_form ">
+            <h5>
+              Newsletter
+            </h5>
+            <form action="">
+              <input type="email" placeholder="Enter your email">
+              <button>
+                Subscribe
+              </button>
+            </form>
+            <div class="social_box" style="padding-bottom:40px">
+              <a href="">
+                <img class="img_social" src="../images/fb.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/twitter.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/tiktok.png" alt="">
+              </a>
+              <a href="">
+                <img class="img_social" src="../images/youtube.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="container-fluid text-center footer">
+    <p>
+      &copy; 2022 All Rights Reserved By Đạt </p>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

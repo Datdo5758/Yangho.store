@@ -1,0 +1,641 @@
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  
+}
+/*header section*/
+.main_area {
+    height: 100vh;
+    background-image: url(../images/hero.png);
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .khuyen-mai{
+    background-color:teal;
+    margin-bottom: 5px;
+  }
+  .padding-than{
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+  .carousel-khung{
+    height: 50vh;
+  }
+  .header_color{
+    background-color:rgb(251, 193, 58);
+  }
+  .divtim{
+    width:48vh;background-color: white;
+    margin-right: 3%;
+  }
+  .tim{
+    width:40vh;
+    padding: 4px;
+  margin-right: 3px;
+    border: none;
+  }
+.timbtn{
+  width:fit-content;
+  padding: 3px 0px 3px 6px;
+color: rgb(243, 79, 112);
+  border: none;
+ margin-right: 6%;
+ border-radius: 50%;
+}
+.timbtn:hover{
+
+ color: #c2068a;
+}
+.navbar-light .navbar-nav .colorwhite a{
+  width: 180px;
+  font-size: 15px;
+  color: white;
+}
+.navbar-light .navbar-nav .colorwhite a:hover{
+ color: rgb(243, 79, 112);
+}
+
+  .heading_container h2 {
+    position: relative;
+    text-align: center;
+    padding-top: 35px;
+  }
+  .header{
+    font-size: 20px;
+  }
+  .header button{
+    border: 1px red;
+    color: #073886;
+    margin-top: 5%;
+    background-color: transparent;
+  }
+  .header button:hover{
+    background-color: #1753c9;
+    color: white;
+  }
+  .header select{
+    border: 1px red;
+    color: #073886;
+    margin-top: 5%;
+    background-color: transparent;
+  }
+  .header select:hover{
+    background-color: #1753c9;
+    color: white;
+  }
+  .carousel .quangcao img{
+    width: 100%;
+    height:500px
+  }
+  .carousel-indicators li {
+    background-position: bottom;
+    background-color: rgb(243, 79, 112);
+  }
+  
+  .select{
+    width: 130px;
+  }
+  .ten{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    
+  }
+  .img-box img{
+    width: 100%;
+  }
+  .sale{
+    height: 60vh;padding-top: 4vh;
+  }
+  .box_sp{
+    padding:8px; 
+    margin:16px 20px 16px 20px;
+    height:auto;
+    transition: all 0.3s;
+    border-radius: 5px;
+  }
+  .box_sp button{
+    font-size: .75rem;
+    line-height: 1rem;
+    padding:10px 20px 10px 20px;
+    margin-top: 5px;
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    transition-duration: .3s;
+    font-weight: 700;
+    border-radius: 20px;
+    border: 1px solid black;
+
+  }
+  .box_sp button:hover{
+    border: none;
+    background-color: red;
+    color:#fff;
+  }
+
+  .box_sp:hover{
+    /* transform: translateY(20px); */
+    /* border: inset 1px red;
+    transform: scale(1.0);
+    box-sizing: border-box; */
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+  }
+  .box_sp img{
+    width: 100%;; 
+    height:160px; 
+    padding:5%;
+
+  }
+  .box_sp buttom{
+    width:auto; 
+    height:80%; 
+    padding:5px;
+
+  }
+  .box_sp .name_sp{
+    font-size: 22px;
+    height: 40px;
+    margin:20% 0px 10% 0px;
+  }
+  .box_sp .gia_sp{
+    font-size: 16px;
+    color:red;
+    
+  }
+  .box_sp .giamgia{
+    font-size: 16px;
+    color:#fff;
+    background-color: red;
+    width:fit-content;
+    border-radius: 50%;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+   
+  }
+  .box_sp .khungCN{
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .box_sp .khungCN input{
+    text-align: center;
+    border: inset 1px;
+    
+    border-color:#dc373d;
+  }
+  .box_sp .nut{
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+    }
+  .next_area{
+    height:50px;
+  }
+  .tieude{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: aqua;
+  }
+  .icon{
+    padding-right: 5px;
+  }
+  .yangho{
+    font-size: 26px;
+    text-align: center;
+    color: rgb(255, 196, 0);
+    font-style: italic;
+
+  }
+  .sticky-top span{
+    padding-right: 10vh; padding-left: 6vh;
+  }
+  .navbar-collapse a{
+    color:#00000080 ;
+    
+  }
+  .span_ten{
+    padding-right: 10vh; padding-left: 6vh; color: white
+  }
+  .khung_sp{
+    padding:1vh 0% 6vh 0% ;
+  }
+  .layout .container{
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .layoutsale{
+    padding-bottom: 8vh;
+  }
+  .layoutsale img{
+    width: 100%;
+    height: 100%;
+
+  }
+  #carouselId{
+    text-align: right;
+  }
+  .footer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+.cochu{
+  font-size: 22px;
+}
+.muangay{
+  text-align: center;
+}
+.fa{
+ padding-right: 8px;
+  font-size: 150%;
+}
+.info_section {
+  background-color: #0f1521;
+  color: #ffffff;
+}
+
+.info_section .info_logo {
+  width: 80%;
+  margin: 0 auto 45px auto;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.info_section .info_logo h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.info_section h5 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.info_section .info_insta .insta_container > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info_section .info_insta .insta_container img {
+  width: 100%;
+}
+
+.info_section .info_insta .insta_container .insta-box {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.info_section .info_contact .img-box {
+  width: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.info_section .info_contact p {
+  margin: 0;
+}
+
+.info_section .info_contact > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0;
+}
+
+.info_section .info_contact > div img {
+  height: auto;
+  margin-right: 12px;
+}
+
+.info_section .info_form form input {
+  outline: none;
+  width: 100%;
+  padding: 7px 10px;
+}
+
+.info_section .info_form form button {
+  display: inline-block;
+  padding: 8px 30px;
+  background-color: #24d278;
+  color: #ffffff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid transparent;
+  border-radius: 0;
+  margin-top: 15px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.info_section .info_form form button:hover {
+  background-color: transparent;
+  border-color: #24d278;
+  color: #24d278;
+}
+
+.info_section .info_form .social_box {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info_section .info_form .social_box a {
+  margin-right: 15px;
+}
+
+/* sản phẩm nổi bật */
+.trending_section {
+  background-color: #f4f5f7;
+}
+
+.trending_section .tab_container .t-link-box {
+  margin: 65px 0;
+  color: #24d278;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.trending_section .tab_container .t-link-box h5 {
+  margin: 0;
+}
+
+.trending_section .tab_container .t-link-box hr {
+  background-color: #24d278;
+  width: 60px;
+  height: 1.5px;
+  border: none;
+  margin: 0 65px 0 5px;
+}
+
+.trending_section .tab_container .t-link-box .t-name {
+  color: #252525;
+}
+
+.trending_section .tab_container .t-link-box:hover {
+  cursor: pointer;
+}
+
+.trending_section .tab_container .t-link-box[aria-expanded="true"] .t-name {
+  color: #24d278;
+}
+
+.trending_section .img_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.trending_section .img_container .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.trending_section .img_container .box .img-box {
+  margin: 15px;
+}
+
+.trending_section .img_container .box .img-box img {
+  width: 100%;
+}
+
+.trending_section .img_container .box.b-1 {
+  padding-top: 35px;
+}
+.social_box .img_social{
+  height: 35px;
+  width: 35x;
+}
+
+
+
+  .contact_section h2 {
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+  }
+  
+  .contact_section form {
+    padding-right: 35px;
+  }
+  
+  .contact_section input {
+    width: 100%;
+    border: 0;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    background-color: transparent;
+    border: 1px solid #bbbbbb;
+    outline: none;
+    color: #101010;
+  }
+  
+  .contact_section input::-webkit-input-placeholder {
+    color: #131313;
+  }
+  
+  .contact_section input:-ms-input-placeholder {
+    color: #131313;
+  }
+  
+  .contact_section input::-ms-input-placeholder {
+    color: #131313;
+  }
+  
+  .contact_section input::placeholder {
+    color: #131313;
+  }
+  
+  .contact_section input.message-box {
+    height: 120px;
+  }
+  
+  .contact_section button {
+    padding: 15px 55px;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid #dc373d;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 auto;
+    background-color: #dc373d;
+  }
+  
+  .contact_section button:hover {
+    color: #dc373d;
+    background-color: transparent;
+  }
+  .contact_section .login a{
+    width: 200px;
+    height: 50px;
+    padding: 2%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid  #2cebb1;
+    color: #fff;
+    font-weight: bold;
+    background-color: #2cebb1;
+  }
+  
+  .contact_section .login a:hover {
+    color:  #2cebb1;
+    background-color: transparent;
+  }
+  /* giỏ hàng */
+  .giohang{
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+    color: rgb(255, 204, 22);
+   
+  font-size: 20px;
+}
+.giohang i{
+  border: 2px solid white;
+}
+.giohang i:hover{
+  border: 2px solid rgb(255, 204, 22);
+}
+.float-left{
+    float: left;
+    width: 65%;
+    padding:10px;
+}
+.btn button{
+  margin-left: 5vh;
+  margin-right: 2vh;
+  border: 1px solid red ;
+  color:red;
+}
+table{
+  margin-left: 18%;
+    width: 64%;
+    border-collapse: collapse;
+    
+    
+}
+table,tr,td{
+    border: 1px solid;
+    vertical-align: middle;
+    padding: 5px;
+}
+tr button{
+  border: 2px red;
+}
+tr button:hover{
+ color:red
+}
+.float-rigth{
+    float: left;
+    width: 35%;
+    padding-right: 50px;
+}
+.float-rigth table{
+  margin-left: 25%;
+  margin-top: 50px;
+    width: 50%;
+    border-collapse: collapse;
+}
+
+#button {
+  display: inline-block;
+  background-color: #FF9800;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
+

@@ -1,0 +1,99 @@
+<script>
+    if (sessionStorage.getItem('carts') == undefined) {
+        window.location = "."
+    }
+</script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/mystyle.css">
+<link rel="stylesheet" href="../css/myresponsive.css">
+<link rel="shortcut icon" href="../images/Yangho.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <h3 style="text-align:center;margin-top: 4vh; color:rgb(255, 204, 22)">Giỏ hàng của bạn</h3>
+   <div class="btn"> 
+    <button onclick="window.location='../khuyen-mai/'">Mua hàng tiếp</button>
+    <button id="Th_XoaCarts" onclick="sessionStorage.removeItem('carts');window.location='../khuyen-mai/'">Xóa giỏ hàng</button>
+</div>
+    <hr>
+    <div class="containder-fluid">
+        <div class="row" style="text-align: center;">
+        <div class="float-left col-12 table-responsive">
+            <table>
+                <tr style="text-align: center;margin-top:3vh; background-color: rgb(255, 204, 22); color: white;">
+                    <td>Hình </td>
+                    <td>Tên </td>
+                    <td>Số lượng</td>
+                    <td>Đơn giá Bán</td>
+                    <td>Thành tiền</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tbody id="Th_Carts">
+
+                </tbody>
+
+            </table>
+        </div>
+        <div class="float-rigth col-12">
+            <table>
+                <caption style="text-align: center;">
+                    <button onclick="datHang()" style="background-color:green;color:white">Đặt hàng</button>
+                </caption>
+                <tr>
+                    <td><label for="Th_Ho_ten">Họ tên: </label></td>
+                    <td><input type="text" id="Th_Ho_ten"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Email">Email: </label></td>
+                    <td><input type="text" id="Th_Email"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Dien_thoai">Điện thoại: </label></td>
+                    <td><input type="text" id="Th_Dien_thoai"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Dia_chi">Địa chỉ Giao hàng:</label></td>
+                    <td><input type="text" id="Th_Dia_chi"></td>
+                </tr>
+                <tr>
+                    <td><label for="Th_Ngay_Giao_hang">Ngày Giao hàng:</label></td>
+                    <td><input type="date" id="Th_Ngay_Giao_hang"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </div>
+
+    <script src="../js/api.js"></script>
+    
+    <script src="../js/cart.js"></script>
+    <script src="../js/format.js"></script>
+    <script>
+
+        
+
+            carts = JSON.parse(sessionStorage.getItem("carts"))
+            Xuat_Dien_thoai_Mua(carts, Th_Carts)
+            apiDienthoai().then(result => {
+                dsDienthoai = result;
+            })
+
+        
+    </script>
+    
+</body>
+
+</html>
