@@ -1,5 +1,4 @@
-# Js275-DoNgocDat
-- Đây là 1 Web bán hàng điện tử
-- Frontend bằng javascript và backend: nodejs
-- deploy bằng heroku(đã hết hạng miễn phí nên backend không còn nữa)
-  
+# yangho_store
+- This is an E-comerce web
+- Frontend with javascript and backend: nodejs
+- deploy using heroku (free tier has ended so the backend is no longer available)
